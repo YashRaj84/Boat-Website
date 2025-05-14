@@ -1,0 +1,320 @@
+/* Basic reset and styling */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    box-sizing: border-box;
+}
+.top-alert {
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    align-content: center;
+    background-color: #e2eaed;
+}
+.navbar{
+    height: 90px;
+    width: device-width;
+    border: 0px solid black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+    
+}
+
+.nav-link:hover {
+    color: #ff3f6c;
+    font-weight: bold;
+}
+/* 
+.ddc1 {
+    display: none;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 8px rgba(202, 27, 27, 0.1);
+    overflow: hidden;
+    z-index: 10;
+} */
+/* .ddc1, .ddc2 {
+    display: none;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 8px rgba(202, 27, 27, 0.1);
+    overflow: hidden;
+    z-index: 10;
+} */
+ .ddc1 {
+    display: none;
+    width: 100vw; /* Full viewport width */
+    max-width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(202, 27, 27, 0.1);
+    overflow: hidden;
+    z-index: 10;
+    grid-template-columns: repeat(6, 1fr); /* Adjust columns as needed */
+    grid-auto-rows: minmax(50px, auto); /* Adjust row height as needed */
+    gap: 5px;
+    padding: 10px 0;
+}
+.ddc2 {
+    display: none;
+    min-width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(202, 27, 27, 0.1);
+    overflow: hidden;
+    z-index: 10;
+    flex-direction: column;
+    gap: 0;
+    padding: 5px 0;
+}
+
+.ddc1 a, .ddc2 a {
+    font-size: 14px;
+    padding: 16px 0;
+    color: #000;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.ddc1 a:hover, .ddc2 a:hover {
+    color: #736e6e;
+}
+
+.nav-item:hover .ddc1, .nav-item:focus-within .ddc1 {
+    display: grid;
+}
+.nav-item:hover .ddc2, .nav-item:focus-within .ddc2 {
+    display: flex;
+}
+
+.search input {
+    height: 30px;
+    width: 200px;
+    padding-left: 20px;
+    background-color: #e2eaed;
+    border: 1px solid rgb(247, 247, 245);
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+ 
+#mainlogo{
+    height: 70px;
+    width: 70px;
+    margin:5px 5px;
+}
+.navbar img {
+    height: 34px;
+    padding-left: 40px;
+}
+.search {
+    position: relative;
+    width: 300px;
+    margin-left: 20px;
+}
+.search i {
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+}
+.sign-in-up{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 25px 0 0;
+}
+
+.sign-in-up:hover {
+    cursor: pointer;
+}
+
+.slider-container {
+    height: 700px;
+    width: device-width;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.7);
+}
+.slider {
+    height: 700px;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.pros {
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 245);
+}
+.pros1, .pros2, .pros3, .pros4 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+}
+.h1 {
+    margin: 10px 20px 10px ;
+}
+.h1box img {
+    width: 250px;
+}
+.h1text-viewall {
+    display: flex;
+    gap: 1380px;
+}
+.viewall {
+    color: rgb(61, 61, 235);
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+.viewall:hover {
+    cursor: pointer;
+}
+.h1text {
+    font-size: 30px;
+    padding-left: 10px;
+}
+.h1text u {
+    text-decoration-color: rgb(157, 43, 43);
+}
+.h1box {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 20px;
+    padding: 0 10px;
+}
+.box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.box:hover {
+    cursor: pointer;
+}
+#des{
+    width: 100%;
+    display: flex;
+    background-color: rgb(253, 253, 27);
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    height: 30px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    
+}
+#des p{
+    font-weight: bold;
+    font-size: 13px;
+}
+.rating{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.rating p{
+    padding: 3px;
+    font-weight: 10;
+    align-self: center;
+    margin: 0;
+}
+.rating img{
+    height: 15px;
+    width: 20px;
+}
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 10px;
+}
+.new_price {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 0;
+}
+.old_price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+
+}
+.MRP {
+    font-size: 12px;
+    color: gray;
+    text-decoration: line-through;
+}
+.discount {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(71, 185, 155);
+}
