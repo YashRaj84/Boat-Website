@@ -48,29 +48,7 @@ body {
     color: #ff3f6c;
     font-weight: bold;
 }
-/* 
-.ddc1 {
-    display: none;
-    width: auto;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 2px 4px 8px rgba(202, 27, 27, 0.1);
-    overflow: hidden;
-    z-index: 10;
-} */
-/* .ddc1, .ddc2 {
-    display: none;
-    width: auto;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 2px 4px 8px rgba(202, 27, 27, 0.1);
-    overflow: hidden;
-    z-index: 10;
-} */
+
  .ddc1 {
     display: none;
     width: 100vw; /* Full viewport width */
